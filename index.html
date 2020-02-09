@@ -2,9 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,7 +30,7 @@
   </head>
   <body>
     <div class="my-container">
-      <div class="nav">
+      <div class="navigation">
         <div class="menu-open">
           <i class="fas fa-bars"></i>
         </div>
@@ -116,21 +123,23 @@
         </div>
       </div>
 
-      <div class="row prod-sec">
-        <div class="col-lg-6 prod-img">
-          <img src="images/single-prod.jpg" alt="single product" />
-        </div>
-        <div class="col-lg-4 prod-desc">
-          <br /><br />
-          <p>
-            The way to get started is to quit talking and begin doing. Our tools
-            will help you boost your productivity.
-          </p>
+      <div class="container-fluid prod-sec">
+        <div class="row">
+          <div class="col-lg-6 prod-img">
+            <img src="images/single-prod.jpg" alt="single product" />
+          </div>
+          <div class="col-lg-4 prod-desc">
+            <br /><br />
+            <p>
+              The way to get started is to quit talking and begin doing. Our
+              tools will help you boost your productivity.
+            </p>
 
-          <div class="link">
-            <a href="shop.html"
-              >Shop now <i class="fas fa-chevron-circle-right"></i
-            ></a>
+            <div class="link">
+              <a href="shop.html"
+                >Shop now <i class="fas fa-chevron-circle-right"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
@@ -154,15 +163,17 @@
 
         <div class="container-fluid">
           <div class="row some-cards">
-            <div class="col-lg-3"></div>
-
-            <div class="col-lg-3 prod">
-              <img src="images/prod-01.jpg" alt="product 1" />
-              <p id="prod-desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis totam, modi possimus neque excepturi non aspernatur
-                rerum et incidunt vel distinctio.
-              </p>
+            <div class="col-lg-6">
+              <div class="review">
+                <p class="review-text">
+                  "This is a gift for my son, who is in the Navy. I am giving it
+                  to him at graduation, and I am absolutely in love with it! I
+                  hope he writes of his travels in this! It is stunning, well
+                  made and i would order again! I have had lots of compliments
+                  on it!"
+                </p>
+                <p class="review-name">Yolanda Tamer</p>
+              </div>
             </div>
 
             <div class="col-lg-3 prod">
@@ -184,6 +195,42 @@
             </div>
           </div>
         </div>
+
+        <div class="container-fluid">
+          <div class="row some-cards">
+            <div class="col-lg-3 prod">
+              <img src="images/prod-01.jpg" alt="product 1" />
+              <p id="prod-desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Facilis totam, modi possimus neque excepturi non aspernatur
+                rerum et incidunt vel distinctio.
+              </p>
+            </div>
+
+            <div class="col-lg-3 prod">
+              <img src="images/prod-02.jpg" alt="product 2" />
+              <p id="prod-desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Facilis totam, modi possimus neque excepturi non aspernatur
+                rerum et incidunt vel distinctio.
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="review">
+                <p class="review-text">
+                  "This review is overdue! About this customized journal for my
+                  11 yr old daughter, who recently has been struggling at schoo
+                  and she absolutely loves it. She cried with joy when she saw
+                  it. Especially the custom note that was put inside. She holds
+                  it like a priceless heirloom, that's exactly what I was aiming
+                  for.. thank you so much!"
+                </p>
+                <p class="review-name">Eric</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <br /><br /><br />
@@ -192,16 +239,26 @@
         <div class="section container">
           <footer>
             <div class="row">
-              <div class="col-lg-3 block">
+              <div class="col-lg-12 block">
+                <div class="footer-media">
+                  <ul>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-instagram-square"></i></li>
+                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li><i class="fab fa-pinterest-square"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 block">
                 <p>
                   Field Journals, <br />
-                  3581 Langley Street, <br />
-                  Gray Manor, <br />
-                  Essex, UK
+                  3581 Langley Street, Gray Manor, Essex, UK
                 </p>
               </div>
 
-              <div class="col-lg-3 block">
+              <div class="col-lg-4 block">
                 <p>
                   FAQs
                   <br />
@@ -211,7 +268,7 @@
                 </p>
               </div>
 
-              <div class="col-lg-3 block">
+              <div class="col-lg-4 block">
                 <p>
                   Careers
                   <br />
@@ -219,17 +276,6 @@
                   <br />
                   Wholesale
                 </p>
-              </div>
-
-              <div class="col-lg-3 block">
-                <div class="media">
-                  <ul>
-                    <li><i class="fab fa-facebook"></i></li>
-                    <li><i class="fab fa-instagram-square"></i></li>
-                    <li><i class="fab fa-twitter-square"></i></li>
-                    <li><i class="fab fa-pinterest-square"></i></li>
-                  </ul>
-                </div>
               </div>
             </div>
           </footer>
