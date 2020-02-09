@@ -409,7 +409,6 @@ input {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 10px;
-  padding-bottom: 3px;
 }
 
 .product-sec input {
@@ -442,4 +441,83 @@ input {
 
 .add-prod a:hover {
   text-decoration: none;
+}
+
+/* ABOUT PAGE */
+
+.hero {
+  height: 400px;
+  background: #f3f6f2;
+  position: relative;
+}
+
+#hero-title {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  margin: 50px auto;
+  width: 65% !important;
+}
+
+@media (max-width: 900px) {
+  .content {
+    width: 90% !important;
+  }
+}
+
+.content p {
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#blockquote {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  padding: 30px 120px;
+  margin: 20px 0;
+}
+
+/* CONTACT PAGE */
+
+form label,
+textarea {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-button {
+  margin: 30px 0px;
+}
+
+.contact-button a {
+  padding: 20px 40px;
+  background: #000;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #fff !important;
+}
+
+.contact-button a:hover {
+  text-decoration: none;
+}
+
+.form-control {
+  box-shadow: none !important;
+}
+
+form input,
+textarea {
+  border-radius: 0% !important;
+}
+
+form input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 2px solid #000 !important;
 }
