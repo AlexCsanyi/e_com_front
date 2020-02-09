@@ -30,7 +30,7 @@
   </head>
   <body>
     <div class="my-container">
-      <div class="navigation">
+      <div class="nav">
         <div class="menu-open">
           <i class="fas fa-bars"></i>
         </div>
@@ -254,7 +254,8 @@
               <div class="col-lg-4 block">
                 <p>
                   Field Journals, <br />
-                  3581 Langley Street, Gray Manor, Essex, UK
+                  3581 Langley Street, Gray Manor, <br />
+                  Essex, UK
                 </p>
               </div>
 
@@ -302,5 +303,29 @@
       new WOW().init();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+
+    <script>
+      $(function() {
+        $(document).scroll(function() {
+          var $nav = $(".nav");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+
+      var t1 = new TimelineMax({ paused: true });
+      t1.to(".menu", 0.5, {
+        left: "0%",
+        ease: Power2.easeInOut
+      });
+
+      t1.reverse();
+      $(document).on("click", ".menu-open", function() {
+        t1.reversed(!t1.reversed());
+      });
+
+      $(document).on("click", ".menu-close", function() {
+        t1.reversed(!t1.reversed());
+      });
+    </script>
   </body>
 </html>
